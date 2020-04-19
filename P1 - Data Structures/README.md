@@ -87,7 +87,9 @@ The space complexity is O(n), where n is linear to the number of unique characte
 1. log(n), a list teration of a string by char, where n is the length of a given string and place a count of each character in a map, similar to radix sort.
 
 ### Build and sort a list of tuples from lowest to highest frequencies. 
+
 ### Build the Huffman Tree by assigning a binary code to each letter,  using shorter codes for the more frequent letters.
+
 ### Trim the Huffman Tree (remove the frequencies from the previously built tree).
 2. log(nlogn), used a priority queue from heapq to keep things sorted, where n is the size of the queue, that's the number of distinct characters plus the number of sub-trees
 3. log(n), built the Huffman Tree while popping and appending nodes from the priority queue, where n is the size of the queue, and adding nodes to the tree takes constant time, O(1)
@@ -99,7 +101,11 @@ The space complexity is O(n), where n is linear to the number of unique characte
 ### Decode
 6. log(n), where n is the length of a given encoded data in binary string format. For each bit in the given string, traverse down the Huffman Tree one node at a time. A mapping character is at a leaf node, when it is found, start from the root again and repeat that until the end of the binary string
 
-# Problem 4 
+# Problem 4 :Active Directory
+
+```In Windows Active Directory, a group can consist of user(s) and group(s) themselves. We can construct this hierarchy as such. Where User is represented by str representing their ids. ```
+
+
 ## Explanation
 
 log(nm), from parent group and recurse down from each sub group to match a given user against a list of users in each group by linear scan, that's log(m)
