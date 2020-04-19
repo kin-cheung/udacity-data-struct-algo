@@ -1,4 +1,0 @@
-since the time complexity requirement was O(logn), a divid and conquer approach came to mind, otherwise a bruteforce approach would require O(n).
-
-1. time complexity is O(logn) where n is the input number
-2. space complexity is also O(logn) for the number of recursions required in stack space
