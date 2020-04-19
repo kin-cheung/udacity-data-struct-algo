@@ -1,4 +1,0 @@
-since the time complexity requirement was O(logn), a divid and conquer approach came to mind. Divide the problem into sub-problems half of the size each time.
-
-1. time complexity is O(logn) where n is the number of numbers in input_list.
-2. space complexity is also O(n) of the size of input_list 
