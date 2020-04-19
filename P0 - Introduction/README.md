@@ -1,4 +1,5 @@
 Time complexity analysis
+========================
 
 Task0: O(n), performed two iterations, where n is the size of texts or calls, whichever is larger
 
@@ -16,4 +17,3 @@ Task4: O(nlogn)
  - used a data structure set to remove duplications, that's O(1) because of hashing in set
  - sorting was used at last to print output in lexicographic order , that's O(nlogn)
  
-Thanks
