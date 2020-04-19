@@ -1,7 +1,7 @@
 Time complexity & space analysis
 ================================
 
-## Problem 1 : LRU Cache
+# Problem 1 : LRU Cache
 ```
 ### Least Recently Used Cache
 
@@ -38,7 +38,7 @@ The space complexity of this LRU cache is O(n), where n is the capacity of the c
 4. for every cache hit, we mark the cache data to be the most recent, so we move the corresponding linked list node to the tail of the list, that's O(1). 
 5. when cache is full, a set() will cause the least recent node, that's the head node, to be deleted and a new node for the new cache data to be linked to the tail of the list, that's O(1)
 
-## Problem 2 : File Recursion
+# Problem 2 : File Recursion
 ```
 Finding Files
 
