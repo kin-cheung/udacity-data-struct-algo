@@ -1,6 +1,0 @@
-a map data structure is used in each node to store children nodes. since a map has an amortized time complexity of O(1) for insertion and lookup, 
-it can keep the time complexity of the whole Trie in linear.
-
-
-1. time complexity is O(n) for both insert() and find() where n is the size of parts
-2. space complexity is also O(n) where n is the sum of parts
