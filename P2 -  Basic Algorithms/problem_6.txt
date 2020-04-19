@@ -1,0 +1,4 @@
+min() and max() are just too handy
+
+1. time complexity is O(n) for where n is the size of ints
+2. space complexity is also O(n) for where n is the size of ints 

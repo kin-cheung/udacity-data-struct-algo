@@ -1,0 +1,22 @@
+The time complexity is O(nlogn), because a priority queue was used.
+The space complexity is O(n), where n is linear to the number of unique characters in a given data:
+	- the size of the map that holds frequencies of each unique characters used in (1)
+	- the size of the priority queue where the number of nodes is equal to the number of unique characters in the map above
+	- the size of the Huffman Tree that is the number of unique characters plus the number of sub-tree roots, that's n + (n - 1)
+	- the size of the codeword map that is also equal to the number of unique characters
+
+# Take a string and determine the relevant frequencies of the characters.
+1. log(n), a list teration of a string by char, where n is the length of a given string and place a count of each character in a map, similar to radix sort.
+
+# Build and sort a list of tuples from lowest to highest frequencies. 
+# Build the Huffman Tree by assigning a binary code to each letter,  using shorter codes for the more frequent letters.
+# Trim the Huffman Tree (remove the frequencies from the previously built tree).
+2. log(nlogn), used a priority queue from heapq to keep things sorted, where n is the size of the queue, that's the number of distinct characters plus the number of sub-trees
+3. log(n), built the Huffman Tree while popping and appending nodes from the priority queue, where n is the size of the queue, and adding nodes to the tree takes constant time, O(1)
+4. log(n), built a map to map every distinct character to a corresponding code word while traversing the whole Huffman Tree. n is the size of the tree and adding a value to the map takes n(1)
+
+# Encode the text into its compressed form.
+5. log(n), where n is the length of the given string. loop through the string and map each character to a codeword from the codeword map to make up the final output string of 0's and 1's.
+
+# Decode
+6. log(n), where n is the length of a given encoded data in binary string format. For each bit in the given string, traverse down the Huffman Tree one node at a time. A mapping character is at a leaf node, when it is found, start from the root again and repeat that until the end of the binary string

@@ -1,0 +1,4 @@
+radix sort was used to meet the O(n) time complexity requirement
+
+1. time complexity is O(n) where n is the size of input_list
+2. space complexity is O(2n) from the size of input_list and output list

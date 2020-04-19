@@ -1,0 +1,1 @@
+log(nm), from parent group and recurse down from each sub group to match a given user against a list of users in each group by linear scan, that's log(m)

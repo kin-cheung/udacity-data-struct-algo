@@ -1,0 +1,3 @@
+Since we wanted to find all paths in all sub paths in infinite depth, the time complexity is O(n) where n is the paths and sub paths it can traverse through until it hits the bottom. When it finds a file that matches a given suffix, it appends it to a list and that takes a constant time, O(1).
+
+The space complexity is O(n) linear to the depth of a given directory and its sub-directories for each recursion and the space to store the output.

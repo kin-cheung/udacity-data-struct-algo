@@ -1,0 +1,9 @@
+To keep all operations to O(1) time complexity, a map was used to hold cache data and a linked list to keep the recentness of each cache data.
+
+The space complexity of this LRU cache is O(n), where n is the capacity of the cache and the linked list takes up space that is linear to the capacity of the cache.
+
+1. used a map to store cache data. the key of the map is the key to a cache data and the value contains a tuple which consists of the cache data value and a reference to a linked list node, which is used when this cache data is hit
+2. used a linked list structure to keep track of the recentness of cache data. One node per cache data. The least recent one is at the head and the most recent one is at the tail.
+3. for every cache get and set , map::get and map::set are O(1) 
+4. for every cache hit, we mark the cache data to be the most recent, so we move the corresponding linked list node to the tail of the list, that's O(1). 
+5. when cache is full, a set() will cause the least recent node, that's the head node, to be deleted and a new node for the new cache data to be linked to the tail of the list, that's O(1)

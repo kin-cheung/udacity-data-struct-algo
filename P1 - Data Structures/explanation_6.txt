@@ -1,0 +1,3 @@
+union() : log(n), where n is the size of the second list. Thought of making use of the size() function to find the bigger list to append the smaller list to but the size function itself is O(n) but it wouldn't help much, unless the size() function is O(1).
+
+intersaction : log(n), where n is the size of the first list or the second list, whichever is larger. A set structure was used for O(1) lookup.
