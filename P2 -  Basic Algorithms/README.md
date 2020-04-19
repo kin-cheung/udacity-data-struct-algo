@@ -1,7 +1,7 @@
 Time complexity & space analysis
 ================================
 
-#Problem 1: Square Root of an Integer
+# Problem 1: Square Root of an Integer
 ```
 Finding the Square Root of an Integer
 
@@ -22,7 +22,7 @@ since the time complexity requirement was O(logn), a divid and conquer approach 
 2. space complexity is also O(logn) for the number of recursions required in stack space
 
 
-#Problem 2: Search in a Rotated Sorted Array
+# Problem 2: Search in a Rotated Sorted Array
 
 ```
 You are given a sorted array which is rotated at some random pivot point.
@@ -45,7 +45,7 @@ since the time complexity requirement was O(logn), a divid and conquer approach 
 1. time complexity is O(logn) where n is the number of numbers in input_list.
 2. space complexity is also O(n) of the size of input_list 
 
-#Problem 3: Rearrange Array Elements
+# Problem 3: Rearrange Array Elements
 
 ```
 Rearrange Array Elements so as to form two number such that their sum is maximum. Return these two numbers. You can assume that all array elements are in the range [0, 9]. The number of digits in both the numbers cannot differ by more than 1. You're not allowed to use any sorting function that Python provides and the expected time complexity is O(nlog(n)).
@@ -62,7 +62,7 @@ since the time complexity requirement was O(nlogn), we could use merge_sort to s
 1. time complexity is O(nlogn) due to the fact that merge_sort is used.
 2. space complexity is O(2n) from the size of input_list and output list
 
-#Problem 4: Dutch National Flag Problem
+# Problem 4: Dutch National Flag Problem
 
 ```
 Given an input array consisting on only 0, 1, and 2, sort the array in a single traversal. You're not allowed to use any sorting function that Python provides.
@@ -77,7 +77,7 @@ radix sort was used to meet the O(n) time complexity requirement
 1. time complexity is O(n) where n is the size of input_list
 2. space complexity is O(2n) from the size of input_list and output list
 
-#Problem 5: Autocomplete with Tries
+# Problem 5: Autocomplete with Tries
 ```
 Building a Trie in Python
 
@@ -109,7 +109,7 @@ it can keep the time complexity of the whole Trie in linear.
 2. space complexity is also O(n) where n is the size of word
 
 
-#Problem 6: Max and Min in a Unsorted Array
+# Problem 6: Max and Min in a Unsorted Array
 ```
 In this problem, we will look for smallest and largest integer from a list of unsorted integers. The code should run in O(n) time. Do not use Python's inbuilt functions to find min and max.
 
@@ -125,7 +125,7 @@ min() and max() are just too handy
 1. time complexity is O(n) for where n is the size of ints
 2. space complexity is also O(n) for where n is the size of ints 
 
-#Problem 7: HTTPRouter using a Trie
+# Problem 7: HTTPRouter using a Trie
 
 ```
 For this exercise we are going to implement an HTTPRouter like you would find in a typical web server using the Trie data structure we learned previously.
@@ -155,7 +155,6 @@ Hint: the RouteTrie stores handlers under path parts, so remember to split your 
 Bonus Points: Add a not found handler to your Router which is returned whenever a path is not found in the Trie.
 
 More Bonus Points: Handle trailing slashes! A request for '/about' or '/about/' are probably looking for the same page. Requests for '' or '/' are probably looking for the root handler. Handle these edge cases in your Router.
-
 
 ```
 
